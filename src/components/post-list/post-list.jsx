@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import PostListItem from '../post-list-item';
+import ListGroup from 'react-bootstrap/ListGroup';
 import './post-list.css';
 
 const PostList = ({posts}) => {
@@ -19,9 +20,9 @@ const PostList = ({posts}) => {
 	});
 
 	return (
-		<ul className="app-list list-group">
+		<ListGroup className="app-list">
 			{elements}
-		</ul>
+		</ListGroup>
 	);
 };
 
